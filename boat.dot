@@ -1,0 +1,42 @@
+digraph namadgi3 {
+
+	LowerCompanionway [shape=box]
+	
+
+	Shore [shape=ellipse];
+SwimDeck [shape=box];
+Cockpit [shape=box];
+UpperCompanionway [shape=box];
+AftTopDeckStb [shape=box];
+LowerCompanionway [shape=box];
+Saloon [shape=box];
+Galley [shape=box];
+PortAftCabin [shape=box];
+StarboardAftCabin [shape=box];
+Corridor [shape=box];
+PortFwdCabin [shape=box];
+StarboardFwdCabin [shape=box];
+ShowerForward [shape=box];
+HeadsForward [shape=box];
+HeadsStbAft [shape=box];
+HeadsPortAft [shape=box];
+GalleyFwdDoorway [shape=ellipse];
+
+Shore -> SwimDeck;
+SwimDeck -> Cockpit;
+Cockpit -> UpperCompanionway;
+UpperCompanionway -> LowerCompanionway;
+LowerCompanionway -> Galley;
+LowerCompanionway -> Saloon;
+LowerCompanionway -> PortAftCabin;
+LowerCompanionway -> StarboardAftCabin;
+Galley -> GalleyFwdDoorway;
+GalleyFwdDoorway -> Corridor;
+Corridor -> PortFwdCabin;
+Corridor -> StarboardFwdCabin;
+Corridor -> ShowerForward;
+Corridor -> HeadsForward;
+PortAftCabin -> HeadsPortAft;
+StarboardAftCabin -> HeadsStbAft;
+
+}
