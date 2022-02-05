@@ -4,7 +4,7 @@ BoatGraph records the layout of a boat as a graph of Spaces and Access ports.
 
 The following UML class diagram shows the data structure for BoatGraph.
 
-[!Data Model](./data/dataModel_class_UML.jpg)
+![Data Model](./data/dataModel_class_UML.jpg)
 
 A Boat consist of many Spaces. Spaces are used for various purposes including human occupation, equipment installation and storage.
 
