@@ -11,14 +11,14 @@ Id,Name,Type,from ,to,passable,Text Description
 9,Open,Open,17,22,1,top deck aft port Open to helm port
 10,Open,Open,3,2,1,upper companionway Open to cockpit
 11,Open,Open,3,5,1,upper companionway Open to lower companionway
-12,Step,Open,5,123,1,lower companionway Open to Landing
-13,,Floor cover,123,28,0,Landing Floor cover to Landing port floor locker
-14,,Floor cover,123,29,0,Landing Floor cover to Landing stb floor locker
-15,,Hatch,123,27,0,Landing Hatch to Engine Compartment
-16,,Open,6,123,1,saloon Open to Landing
+12,Step,Open,5,123,1,lower companionway Open to Lower deck landing
+13,,Floor cover,123,28,0,Lower deck landing Floor cover to Landing port floor locker
+14,,Floor cover,123,29,0,Lower deck landing Floor cover to Landing stb floor locker
+15,,Hatch,123,27,0,Lower deck landing Hatch to Engine Compartment
+16,,Open,6,123,1,saloon Open to Lower deck landing
 17,,Doorway,6,10,1,saloon Doorway to corridor
-18,,Doorway,123,8,1,Landing Doorway to port aft cabin
-19,,Doorway,123,9,1,Landing Doorway to stb aft cabin
+18,,Doorway,123,8,1,Lower deck landing Doorway to port aft cabin
+19,,Doorway,123,9,1,Lower deck landing Doorway to stb aft cabin
 20,,Open,6,7,1,saloon Open to galley
 21,,Doorway,10,13,1,corridor Doorway to fwd shower
 22,,Doorway,10,11,1,corridor Doorway to port fwd cabin
@@ -39,9 +39,9 @@ Id,Name,Type,from ,to,passable,Text Description
 37,,Hatch,2,21,0,cockpit Hatch to floor lazarette
 38,,Hatch,22,21,0,helm port Hatch to floor lazarette
 39,,Hatch,23,21,0,helm stb Hatch to floor lazarette
-40,,Cupboard,123,30,0,Landing Cupboard to Landing cupboard
-41,,Open,123,31,0,Landing Open to Landing top shelf
-42,,Open,123,32,0,Landing Open to Landing mid shelf
+40,,Cupboard,123,30,0,Lower deck landing Cupboard to Landing cupboard
+41,,Open,123,31,0,Lower deck landing Open to Landing top shelf
+42,,Open,123,32,0,Lower deck landing Open to Landing mid shelf
 43,,Doorway,7,33,0,galley Doorway to Fridge
 44,,Hatch,7,34,0,galley Hatch to Coolbox
 45,,Doorway,8,16,1,port aft cabin Doorway to port aft heads
@@ -123,3 +123,32 @@ Id,Name,Type,from ,to,passable,Text Description
 121,,Under Bunk Hatch,11,128,0,port fwd cabin Under Bunk Hatch to Bow thruster motor compartment
 122,,Under Bunk Hatch,12,128,0,stb fwd cabin Under Bunk Hatch to Bow thruster motor compartment
 123,,Floor cover,117,129,0,Aft cabin separation locker Floor cover to Genset space
+124,,Cupboard,8,130,0,port aft cabin Cupboard to Wardrobe
+125,,Open,8,131,0,port aft cabin Open to Top shelf
+126,,Open,8,132,0,port aft cabin Open to Lower Shelf
+127,,Hatch,8,133,0,port aft cabin Hatch to Under seat locker
+128,,Under Bunk Hatch,8,134,0,port aft cabin Under Bunk Hatch to Under bunk locker fwd
+129,,Under Bunk Hatch,8,135,0,port aft cabin Under Bunk Hatch to Under bunk locker aft
+130,,Floor cover,8,136,0,port aft cabin Floor cover to Floor locker
+131,,Cupboard,9,137,0,stb aft cabin Cupboard to Wardrobe
+132,,Open,9,138,0,stb aft cabin Open to Top shelf
+133,,Open,9,139,0,stb aft cabin Open to Lower Shelf
+134,,Hatch,9,140,0,stb aft cabin Hatch to Under seat locker
+135,,Under Bunk Hatch,9,141,0,stb aft cabin Under Bunk Hatch to Under bunk locker fwd
+136,,Under Bunk Hatch,9,142,0,stb aft cabin Under Bunk Hatch to Under bunk locker aft
+137,,Floor cover,9,143,0,stb aft cabin Floor cover to Floor locker
+138,,Cupboard,14,107,0,fwd heads Cupboard to Under basin cupboard
+139,,Hatch,14,101,0,fwd heads Hatch to Black water tank locker
+140,,Open,14,102,0,fwd heads Open to Lower Shelf
+141,,Open,14,103,0,fwd heads Open to Upper Shelf
+142,,Cupboard,14,108,0,fwd heads Cupboard to unusd
+143,,Cupboard,15,109,0,stb aft heads Cupboard to Under basin cupboard
+144,,Hatch,15,104,0,stb aft heads Hatch to Black water tank locker
+145,,Open,15,113,0,stb aft heads Open to Upper shelf
+146,,Open,15,114,0,stb aft heads Open to Lower shelf
+147,,Cupboard,15,110,0,stb aft heads Cupboard to Upper cupboard
+148,,Cupboard,16,111,0,port aft heads Cupboard to Under basin cupboard
+149,,Hatch,16,119,0,port aft heads Hatch to Black water tank locker
+150,,Open,16,120,0,port aft heads Open to Lower shelf
+151,,Open,16,121,0,port aft heads Open to Upper shelf
+152,,Cupboard,16,112,0,port aft heads Cupboard to Upper cupboard
