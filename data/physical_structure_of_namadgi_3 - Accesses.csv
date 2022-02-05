@@ -1,0 +1,125 @@
+Id,Name,Type,from ,to,passable,Text Description
+0,Air step,Open,1,0,1,swim deck Open to Shore
+1,Step,Open,1,2,1,swim deck Open to cockpit
+2,Step,Open,1,22,1,swim deck Open to helm port
+3,Open,Open,1,23,1,swim deck Open to helm stb
+4,Open,Open,2,22,1,cockpit Open to helm port
+5,Open,Open,2,23,1,cockpit Open to helm stb
+6,Open,Open,4,2,1,top deck stb aft Open to cockpit
+7,Open,Open,17,2,1,top deck aft port Open to cockpit
+8,Open,Open,4,23,1,top deck stb aft Open to helm stb
+9,Open,Open,17,22,1,top deck aft port Open to helm port
+10,Open,Open,3,2,1,upper companionway Open to cockpit
+11,Open,Open,3,5,1,upper companionway Open to lower companionway
+12,Step,Open,5,123,1,lower companionway Open to Landing
+13,,Floor cover,123,28,0,Landing Floor cover to Landing port floor locker
+14,,Floor cover,123,29,0,Landing Floor cover to Landing stb floor locker
+15,,Hatch,123,27,0,Landing Hatch to Engine Compartment
+16,,Open,6,123,1,saloon Open to Landing
+17,,Doorway,6,10,1,saloon Doorway to corridor
+18,,Doorway,123,8,1,Landing Doorway to port aft cabin
+19,,Doorway,123,9,1,Landing Doorway to stb aft cabin
+20,,Open,6,7,1,saloon Open to galley
+21,,Doorway,10,13,1,corridor Doorway to fwd shower
+22,,Doorway,10,11,1,corridor Doorway to port fwd cabin
+23,,Doorway,10,12,1,corridor Doorway to stb fwd cabin
+24,,Doorway,10,14,1,corridor Doorway to fwd heads
+25,,Floor cover,10,124,0,corridor Floor cover to corridor port floor locker
+26,,Floor cover,10,125,0,corridor Floor cover to corridor stb floor locker
+27,,Hatch,2,24,0,cockpit Hatch to cockpit seat locker stb
+28,,Hatch,2,25,0,cockpit Hatch to cockpit seat locker port
+29,,Hatch,22,26,0,helm port Hatch to gas locker
+30,,Floor cover,22,126,0,helm port Floor cover to water refill locker
+31,,Floor cover,23,127,0,helm stb Floor cover to diesel refill locker
+32,,Open,4,18,1,top deck stb aft Open to top deck amidships
+33,,Open,17,18,1,top deck aft port Open to top deck amidships
+34,,Open,18,19,1,top deck amidships Open to foredeck
+35,,Open,19,20,1,foredeck Open to pullpit
+36,,Hatch,19,118,1,foredeck Hatch to Sail locker
+37,,Hatch,2,21,0,cockpit Hatch to floor lazarette
+38,,Hatch,22,21,0,helm port Hatch to floor lazarette
+39,,Hatch,23,21,0,helm stb Hatch to floor lazarette
+40,,Cupboard,123,30,0,Landing Cupboard to Landing cupboard
+41,,Open,123,31,0,Landing Open to Landing top shelf
+42,,Open,123,32,0,Landing Open to Landing mid shelf
+43,,Doorway,7,33,0,galley Doorway to Fridge
+44,,Hatch,7,34,0,galley Hatch to Coolbox
+45,,Doorway,8,16,1,port aft cabin Doorway to port aft heads
+46,,Doorway,9,15,1,stb aft cabin Doorway to stb aft heads
+47,,Open,7,45,0,galley Open to Galley shelf
+48,,Open,7,46,0,galley Open to Galley console shelf
+49,,Doorway,7,47,0,galley Doorway to Galley console lower cupboard
+50,,Doorway,7,48,0,galley Doorway to Galley console lower cupboard fwd
+51,,Doorway,7,49,0,galley Doorway to Galley console lower cupboard aft
+52,,Floor cover,7,50,0,galley Floor cover to Galley floor locker 1 (aft)
+53,,Floor cover,7,51,0,galley Floor cover to Galley floor locker 2
+54,,Floor cover,7,52,0,galley Floor cover to Galley floor locker 3
+55,,Floor cover,7,53,0,galley Floor cover to Galley floor locker 4 (fwd)
+56,,Floor cover,6,54,0,saloon Floor cover to Saloon keel floor locker 1
+57,,Floor cover,6,55,0,saloon Floor cover to Saloon keel floor locker 2
+58,,Floor cover,6,56,0,saloon Floor cover to Saloon keel floor locker 3
+59,,Floor cover,6,57,0,saloon Floor cover to Saloon outboard floor locker 1
+60,,Floor cover,6,58,0,saloon Floor cover to Saloon outboard floor locker 2
+61,,Floor cover,6,59,0,saloon Floor cover to Saloon outboard floor locker 3
+62,,Hatch,6,60,0,saloon Hatch to Saloon table locker aft
+63,,Hatch,6,61,0,saloon Hatch to Saloon table locker fwd
+64,,Hatch,6,62,0,saloon Hatch to Saloon seat locker fwd inboard
+65,,Hatch,6,63,0,saloon Hatch to Saloon seat locker fwd outboard
+66,,Hatch,6,64,0,saloon Hatch to Saloon seat locker aft
+67,,Hatch,6,65,0,saloon Hatch to Saloon seat locker middle
+68,,Hatch,6,66,0,saloon Hatch to Saloon backrest locker 1
+69,,Hatch,6,67,0,saloon Hatch to Saloon backrest locker 2
+70,,Hatch,6,68,0,saloon Hatch to Saloon backrest locker 3
+71,,Hatch,6,69,0,saloon Hatch to Saloon backrest locker 4
+72,,Open,6,70,0,saloon Open to Saloon shelf fwd
+73,,Open,6,71,0,saloon Open to Saloon shelf aft
+74,,Open,6,72,0,saloon Open to Saloon shelf upper
+75,,Doorway,6,73,0,saloon Doorway to Saloon cupboard 1
+76,,Doorway,6,74,0,saloon Doorway to Saloon cupboard 2
+77,,Doorway,6,75,0,saloon Doorway to Saloon cupboard 3
+78,,Doorway,6,76,0,saloon Doorway to Saloon cupboard 4
+79,,Drawer,7,35,0,galley Drawer to Galley top draw
+80,,Drawer,7,36,0,galley Drawer to Galley mid drawer
+81,,Cupboard,7,38,0,galley Cupboard to Under sink aft
+82,,Cupboard,7,39,0,galley Cupboard to Under sink fwd
+83,,Cupboard,7,44,0,galley Cupboard to Oven
+84,,Open,7,46,0,galley Open to Galley console shelf
+85,,Cupboard,7,47,0,galley Cupboard to Galley console lower cupboard
+86,,Cupboard,7,48,0,galley Cupboard to Galley console lower cupboard fwd
+87,,Cupboard,7,49,0,galley Cupboard to Galley console lower cupboard aft
+88,,Open,7,45,0,galley Open to Galley shelf
+89,,Cupboard,7,37,0,galley Cupboard to Under stove cupboard
+90,,Cupboard,7,40,0,galley Cupboard to Galley overhead cupboard 1 (aft)
+91,,Cupboard,7,41,0,galley Cupboard to Galley overhead cupboard 2
+92,,Cupboard,7,42,0,galley Cupboard to Galley overhead cupboard 3
+93,,Cupboard,7,43,0,galley Cupboard to Galley overhead cupboard 4 (fwd)
+94,,Cupboard,11,77,0,port fwd cabin Cupboard to Overhead locker 1
+95,,Cupboard,11,78,0,port fwd cabin Cupboard to Overhead locker 2
+96,,Cupboard,11,79,0,port fwd cabin Cupboard to Overhead locker 3
+97,,Open,11,80,0,port fwd cabin Open to Shelf fwd
+98,,Open,11,81,0,port fwd cabin Open to Shelf aft
+99,,Cupboard,11,82,0,port fwd cabin Cupboard to Wardrobe
+100,,Cupboard,11,83,0,port fwd cabin Cupboard to Seat locker
+101,,Cupboard,11,84,0,port fwd cabin Cupboard to Under bunk locker fwd
+102,,Cupboard,11,85,0,port fwd cabin Cupboard to Under bunk locker aft
+103,,Floor cover,11,86,0,port fwd cabin Floor cover to Floor locker
+104,,Cupboard,12,87,0,stb fwd cabin Cupboard to Overhead locker 1
+105,,Cupboard,12,88,0,stb fwd cabin Cupboard to Overhead locker 2
+106,,Cupboard,12,89,0,stb fwd cabin Cupboard to Overhead locker 3
+107,,Open,12,90,0,stb fwd cabin Open to Shelf fwd
+108,,Open,12,91,0,stb fwd cabin Open to Shelf aft
+109,,Cupboard,12,92,0,stb fwd cabin Cupboard to Wardrobe
+110,,Cupboard,12,93,0,stb fwd cabin Cupboard to Seat locker
+111,,Cupboard,12,94,0,stb fwd cabin Cupboard to Under bunk locker fwd
+112,,Cupboard,12,95,0,stb fwd cabin Cupboard to Under bunk locker aft
+113,,Floor cover,12,96,0,stb fwd cabin Floor cover to Floor locker
+114,,Cupboard,118,122,0,Sail locker Cupboard to Chain locker
+115,,Hatch,8,115,0,port aft cabin Hatch to Port transom locker
+116,,Hatch,9,116,0,stb aft cabin Hatch to Stb transom locker
+117,,Hatch,8,117,0,port aft cabin Hatch to Aft cabin separation locker
+118,,Hatch,9,117,0,stb aft cabin Hatch to Aft cabin separation locker
+119,,Gate,4,0,1,top deck stb aft Gate to Shore
+120,,Gate,17,0,1,top deck aft port Gate to Shore
+121,,Under Bunk Hatch,11,128,0,port fwd cabin Under Bunk Hatch to Bow thruster motor compartment
+122,,Under Bunk Hatch,12,128,0,stb fwd cabin Under Bunk Hatch to Bow thruster motor compartment
+123,,Floor cover,117,129,0,Aft cabin separation locker Floor cover to Genset space
