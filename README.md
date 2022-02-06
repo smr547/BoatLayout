@@ -12,7 +12,7 @@ An Access is a connection between two spaces. Examples are doorways, hatches and
 
 ## Usage
 
-First export your spreadsheet data to csv files and copy them to the ``data`` directory
+First export [your spreadsheet data](https://docs.google.com/spreadsheets/d/1yq5cOqXlXes5evZahwHix0Qybtwbf-atnjoPh10wmd8/edit?usp=sharing) to csv files and copy them to the ``data`` directory
 
 ```
 cd src
