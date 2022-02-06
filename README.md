@@ -30,3 +30,12 @@ Finally run ``dot`` to create the output PDF
 ```
 dot -Tpdf namadgi3.dot -o namadgi3.pdf       
 ```
+
+
+## Future work
+
+* Better layout of the PDF graph to allow printing
+* Physical coordinates and dimensions for all spaces and accesses
+* 3D printing and viewer
+* Comments on Space and Access entities
+* More descriptive access types
