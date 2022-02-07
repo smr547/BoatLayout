@@ -1,0 +1,12 @@
+
+digraph namadgi_3 {
+
+   shore -> Cockpit;
+   Cockpit -> TopDeck;
+   Cockpit -> Companionway;
+   Companionway -> Saloon -> FwdAccommodation;
+   Companionway -> AftAccommodation;
+   Companionway -> EngineCompartment;
+   Saloon -> Galley;
+  
+} 
