@@ -1,0 +1,19 @@
+
+digraph namadgi_3 {
+
+
+  TopDeck [ label="Top\nDeck"];  
+  FwdAccommodation [ label="Forward\nAccommodation"];  
+  AftAccommodation [ label="Aft\nAccommodation"];  
+  EngineCompartment [ label="Engine\nCompartment"];  
+
+   Shore -> Cockpit [dir=both];
+   Shore -> TopDeck [dir=both];
+   Cockpit -> TopDeck [dir=both];
+   Cockpit -> Companionway [dir=both];
+   Companionway -> Saloon -> FwdAccommodation [dir=both];
+   Companionway -> AftAccommodation [dir=both];
+   Companionway -> EngineCompartment [dir=both];
+   Saloon -> Galley [dir=both];
+  
+} 
