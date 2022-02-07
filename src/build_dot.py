@@ -22,12 +22,15 @@ parser = argparse.ArgumentParser(description='Create dot file from Spaces and Ac
 parser.add_argument("-s", '--spaces', required=True, help='Path to Spaces.csv file')
 parser.add_argument("-a", '--access', required=True, help='Path to Access.csv file')
 parser.add_argument("-r", '--regions', required=True, help='Path to Regions.csv file')
+parser.add_argument("-f", '--filter', required=False, default = None, help='Filter to a single region')
 
 args = vars(parser.parse_args())
 
 spaces = args['spaces']
 access = args['access']
 regions = args['regions']
+filter = args['filter']
+
 
 # build the regions dictionary
 
@@ -40,6 +43,13 @@ with open(regions, 'r') as sf:
             continue
         name = fields[1]
         region[id] = name
+
+# regions selected
+
+if filter == None: 
+    regions_selected = [r for r in region]
+else:
+    regions_selected = filter.split(',')
 
 # build the space dictionary
 
@@ -61,12 +71,19 @@ with open(spaces, 'r') as sf:
 # output dot file
 
 print("digraph namadgi3 {")
+print("  size=\"11.5,8\";")
+print("  ratio=fill;")
+
 for id in space:
     name = space[id][0]
-    line = "    S" + id + "  [label=\"" + name + "\"];"
-    print(line)
+    r = space[id][1]
+    if r in regions_selected:
+        line = "    S" + id + "  [label=\"" + name + "\"];"
+        print(line)
 
 print()
+
+# print all accesses 
 
 with open(access, 'r') as af:
     for line in af:
@@ -76,17 +93,18 @@ with open(access, 'r') as af:
         sTo = fields[4]
         name = fields[6]
         if id.upper() != "ID":
-            line = "   S" + sFrom + " -> S" + sTo
-            if fields[5] == "1":
-                line += " [dir=\"both\"]"
-            line += ";"
-            print(line)
+            if space[sFrom][1] in regions_selected and space[sTo][1] in regions_selected:
+                line = "   S" + sFrom + " -> S" + sTo
+                if fields[5] == "1":
+                    line += " [dir=\"both\"]"
+                line += ";"
+                print(line)
 
 # Define a subgraph for each region
 
-for r in region:
+for r in regions_selected:
     name = region[r]
-    line = "   subgraph \"" + name +"\"  {label=\"" + name + "\"; "
+    line = "   subgraph \"cluster_" + name +"\"  {label=\"" + name + "\"; "
     for s in space:
         if space[s][1] == r:
             line += "S" + s + "; "
