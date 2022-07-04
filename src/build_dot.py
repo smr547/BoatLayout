@@ -76,6 +76,7 @@ print("  ratio=fill;")
 
 for id in space:
     name = space[id][0]
+    name = name.replace(' ','\n')
     r = space[id][1]
     if r in regions_selected:
         line = "    S" + id + "  [label=\"" + name + "\"];"
