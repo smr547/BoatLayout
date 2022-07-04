@@ -1,0 +1,31 @@
+
+
+digraph namadgi_3 {
+
+
+  TopDeck [ label="Top\nDeck"];  
+/*   EngineCompartment [ label="Engine\nCompartment"]; -- not passable */  
+   PortAftCabin [ label="Port\nAft\nCabin" ];
+   StbAftCabin [ label="Stb\nAft\nCabin" ];
+   PortFwdCabin [ label="Port\nForward\nCabin" ];
+   StbFwdCabin [ label="Stb\nForward\nCabin" ];
+   FwdHeads [ label="Forward\nHeads" ];
+   FwdShower [ label="Forward\nShower" ];
+
+   Shore -> Cockpit [dir=both];
+   Shore -> TopDeck [dir=both];
+   Cockpit -> TopDeck [dir=both];
+   Cockpit -> Companionway [dir=both];
+   /* Companionway -> EngineCompartment [dir=both]; */
+   Companionway -> StbAftCabin [dir=both];
+   Companionway -> PortAftCabin [dir=both];
+   Companionway -> Saloon [dir=both];
+   Saloon -> Galley [dir=both];
+   Saloon -> Corridor [dir=both];
+   Corridor -> FwdShower [dir=both];
+   Corridor -> FwdHeads [dir=both];
+   Corridor -> PortFwdCabin [dir=both];
+   Corridor -> StbFwdCabin [dir=both];
+  
+}
+ 

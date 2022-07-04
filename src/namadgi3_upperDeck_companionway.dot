@@ -1,0 +1,162 @@
+digraph namadgi3 {
+  size="11.5,8";
+  ratio=fill;
+    S0  [label="Shore
+(0)"];
+    S1  [label="swim
+deck
+(1)"];
+    S2  [label="cockpit
+(2)"];
+    S3  [label="upper
+companionway
+(3)"];
+    S4  [label="top
+deck
+stb
+aft
+(4)"];
+    S5  [label="lower
+companionway
+(5)"];
+    S17  [label="top
+deck
+aft
+port
+(17)"];
+    S18  [label="top
+deck
+amidships
+(18)"];
+    S19  [label="foredeck
+(19)"];
+    S20  [label="pullpit
+(20)"];
+    S21  [label="floor
+lazarette
+(21)"];
+    S22  [label="helm
+port
+(22)"];
+    S23  [label="helm
+stb
+(23)"];
+    S24  [label="cockpit
+seat
+locker
+stb
+(24)"];
+    S25  [label="cockpit
+seat
+locker
+port
+(25)"];
+    S26  [label="gas
+locker
+(26)"];
+    S27  [label="Engine
+Compartment
+(27)"];
+    S28  [label="Landing
+port
+floor
+locker
+(28)"];
+    S29  [label="Landing
+stb
+floor
+locker
+(29)"];
+    S30  [label="Landing
+cupboard
+(30)"];
+    S31  [label="Landing
+top
+shelf
+(31)"];
+    S32  [label="Landing
+mid
+shelf
+(32)"];
+    S97  [label="under
+dodger
+port
+(97)"];
+    S98  [label="under
+dodger
+stb
+(98)"];
+    S100  [label="Console
+table
+top
+(100)"];
+    S118  [label="Sail
+locker
+(118)"];
+    S122  [label="Chain
+locker
+(122)"];
+    S123  [label="Lower
+deck
+landing
+(123)"];
+    S126  [label="water
+refill
+locker
+(126)"];
+    S127  [label="diesel
+refill
+locker
+(127)"];
+    S129  [label="Genset
+space
+(129)"];
+    S144  [label="Console
+locker
+(144)"];
+
+   S1 -> S0 [dir="both"];
+   S1 -> S2 [dir="both"];
+   S1 -> S22 [dir="both"];
+   S1 -> S23 [dir="both"];
+   S2 -> S22 [dir="both"];
+   S2 -> S23 [dir="both"];
+   S2 -> S97;
+   S2 -> S98;
+   S2 -> S100;
+   S2 -> S144;
+   S4 -> S2 [dir="both"];
+   S17 -> S2 [dir="both"];
+   S4 -> S23 [dir="both"];
+   S17 -> S22 [dir="both"];
+   S3 -> S2 [dir="both"];
+   S3 -> S5 [dir="both"];
+   S5 -> S123 [dir="both"];
+   S123 -> S28;
+   S123 -> S29;
+   S123 -> S27;
+   S2 -> S24;
+   S2 -> S25;
+   S22 -> S26;
+   S22 -> S126;
+   S23 -> S127;
+   S4 -> S18 [dir="both"];
+   S17 -> S18 [dir="both"];
+   S18 -> S19 [dir="both"];
+   S19 -> S20 [dir="both"];
+   S19 -> S118 [dir="both"];
+   S2 -> S21;
+   S22 -> S21;
+   S23 -> S21;
+   S123 -> S30;
+   S123 -> S31;
+   S123 -> S32;
+   S118 -> S122;
+   S4 -> S0 [dir="both"];
+   S17 -> S0 [dir="both"];
+   subgraph "cluster_Shore"  {label="Shore"; S0; }
+   subgraph "cluster_Top deck"  {label="Top deck"; S4; S17; S18; S19; S20; S21; S118; S122; }
+   subgraph "cluster_Cockpit"  {label="Cockpit"; S1; S2; S22; S23; S24; S25; S26; S97; S98; S100; S126; S127; S144; }
+   subgraph "cluster_Lower Deck entry"  {label="Lower Deck entry"; S3; S5; S28; S29; S30; S31; S32; S123; }
+   subgraph "cluster_Engine space"  {label="Engine space"; S27; S129; }
+}

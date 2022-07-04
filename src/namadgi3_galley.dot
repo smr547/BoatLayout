@@ -1,0 +1,126 @@
+digraph namadgi3 {
+  size="11.5,8";
+  ratio=fill;
+    S7  [label="galley
+(7)"];
+    S33  [label="Fridge
+(33)"];
+    S34  [label="Coolbox
+(34)"];
+    S35  [label="Galley
+top
+draw
+(35)"];
+    S36  [label="Galley
+mid
+drawer
+(36)"];
+    S37  [label="Under
+stove
+cupboard
+(37)"];
+    S38  [label="Under
+sink
+aft
+(38)"];
+    S39  [label="Under
+sink
+fwd
+(39)"];
+    S40  [label="Galley
+overhead
+cupboard
+1
+(aft)
+(40)"];
+    S41  [label="Galley
+overhead
+cupboard
+2
+(41)"];
+    S42  [label="Galley
+overhead
+cupboard
+3
+(42)"];
+    S43  [label="Galley
+overhead
+cupboard
+4
+(fwd)
+(43)"];
+    S44  [label="Oven
+(44)"];
+    S45  [label="shelf
+(45)"];
+    S46  [label="console
+shelf
+(46)"];
+    S47  [label="console
+lower
+cupboard
+(47)"];
+    S48  [label="console
+lower
+cupboard
+fwd
+(48)"];
+    S49  [label="console
+lower
+cupboard
+aft
+(49)"];
+    S50  [label="floor
+locker
+1
+(aft)
+(50)"];
+    S51  [label="floor
+locker
+2
+(51)"];
+    S52  [label="floor
+locker
+3
+(52)"];
+    S53  [label="floor
+locker
+4
+(fwd)
+(53)"];
+    S99  [label="Under
+drawer
+cupboard
+(99)"];
+    S105  [label="Benchtop
+(105)"];
+    S106  [label="Sink
+(106)"];
+
+   S7 -> S33;
+   S7 -> S34;
+   S7 -> S45;
+   S7 -> S46;
+   S7 -> S47;
+   S7 -> S48;
+   S7 -> S49;
+   S7 -> S50;
+   S7 -> S51;
+   S7 -> S52;
+   S7 -> S53;
+   S7 -> S35;
+   S7 -> S36;
+   S7 -> S99;
+   S7 -> S105;
+   S7 -> S106;
+   S7 -> S38;
+   S7 -> S39;
+   S7 -> S44;
+   S7 -> S49;
+   S7 -> S37;
+   S7 -> S40;
+   S7 -> S41;
+   S7 -> S42;
+   S7 -> S43;
+   subgraph "cluster_Galley"  {label="Galley"; S7; S33; S34; S35; S36; S37; S38; S39; S40; S41; S42; S43; S44; S45; S46; S47; S48; S49; S50; S51; S52; S53; S99; S105; S106; }
+}

@@ -1,0 +1,13 @@
+
+digraph namadgi_3 {
+
+   PortFwdCabin [ label="Port\nForward\nCabin" ];
+   StbFwdCabin [ label="Stb\nForward\nCabin" ];
+   FwdHeads [ label="Forward\nHeads" ];
+
+   Corridor -> Shower [dir=both];
+   Corridor -> FwdHeads [dir=both];
+   Corridor -> PortFwdCabin [dir=both];
+   Corridor -> StbFwdCabin [dir=both];
+  
+} 

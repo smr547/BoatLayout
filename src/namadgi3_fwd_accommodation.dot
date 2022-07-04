@@ -1,0 +1,160 @@
+digraph namadgi3 {
+  size="11.5,8";
+  ratio=fill;
+    S10  [label="corridor
+(10)"];
+    S11  [label="port
+fwd
+cabin
+(11)"];
+    S12  [label="stb
+fwd
+cabin
+(12)"];
+    S13  [label="fwd
+shower
+(13)"];
+    S14  [label="fwd
+heads
+(14)"];
+    S77  [label="Overhead
+locker
+1
+(77)"];
+    S78  [label="Overhead
+locker
+2
+(78)"];
+    S79  [label="Overhead
+locker
+3
+(79)"];
+    S80  [label="Shelf
+fwd
+(80)"];
+    S81  [label="Shelf
+aft
+(81)"];
+    S82  [label="Wardrobe
+(82)"];
+    S83  [label="Seat
+locker
+(83)"];
+    S84  [label="Under
+bunk
+locker
+fwd
+(84)"];
+    S85  [label="Under
+bunk
+locker
+aft
+(85)"];
+    S86  [label="Floor
+locker
+(86)"];
+    S87  [label="Overhead
+locker
+1
+(87)"];
+    S88  [label="Overhead
+locker
+2
+(88)"];
+    S89  [label="Overhead
+locker
+3
+(89)"];
+    S90  [label="Shelf
+fwd
+(90)"];
+    S91  [label="Shelf
+aft
+(91)"];
+    S92  [label="Wardrobe
+(92)"];
+    S93  [label="Seat
+locker
+(93)"];
+    S94  [label="Under
+bunk
+locker
+fwd
+(94)"];
+    S95  [label="Under
+bunk
+locker
+aft
+(95)"];
+    S96  [label="Floor
+locker
+(96)"];
+    S101  [label="Black
+water
+tank
+locker
+(101)"];
+    S102  [label="Lower
+Shelf
+(102)"];
+    S103  [label="Upper
+Shelf
+(103)"];
+    S107  [label="Under
+basin
+cupboard
+(107)"];
+    S108  [label="Upper
+cupboard
+(108)"];
+    S124  [label="corridor
+port
+floor
+locker
+(124)"];
+    S125  [label="corridor
+stb
+floor
+locker
+(125)"];
+    S128  [label="Bow
+thruster
+motor
+compartment
+(128)"];
+
+   S10 -> S13 [dir="both"];
+   S10 -> S11 [dir="both"];
+   S10 -> S12 [dir="both"];
+   S10 -> S14 [dir="both"];
+   S10 -> S124;
+   S10 -> S125;
+   S11 -> S77;
+   S11 -> S78;
+   S11 -> S79;
+   S11 -> S80;
+   S11 -> S81;
+   S11 -> S82;
+   S11 -> S83;
+   S11 -> S84;
+   S11 -> S85;
+   S11 -> S86;
+   S12 -> S87;
+   S12 -> S88;
+   S12 -> S89;
+   S12 -> S90;
+   S12 -> S91;
+   S12 -> S92;
+   S12 -> S93;
+   S12 -> S94;
+   S12 -> S95;
+   S12 -> S96;
+   S11 -> S128;
+   S12 -> S128;
+   S14 -> S107;
+   S14 -> S101;
+   S14 -> S102;
+   S14 -> S103;
+   S14 -> S108;
+   subgraph "cluster_Fwd accommodation"  {label="Fwd accommodation"; S10; S11; S12; S13; S14; S77; S78; S79; S80; S81; S82; S83; S84; S85; S86; S87; S88; S89; S90; S91; S92; S93; S94; S95; S96; S101; S102; S103; S107; S108; S124; S125; S128; }
+}

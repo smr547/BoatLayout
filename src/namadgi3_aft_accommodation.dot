@@ -1,0 +1,151 @@
+digraph namadgi3 {
+  size="11.5,8";
+  ratio=fill;
+    S8  [label="port
+aft
+cabin
+(8)"];
+    S9  [label="stb
+aft
+cabin
+(9)"];
+    S15  [label="stb
+aft
+heads
+(15)"];
+    S16  [label="port
+aft
+heads
+(16)"];
+    S104  [label="Black
+water
+tank
+locker
+(104)"];
+    S109  [label="Under
+basin
+cupboard
+(109)"];
+    S110  [label="Upper
+cupboard
+(110)"];
+    S111  [label="Under
+basin
+cupboard
+(111)"];
+    S112  [label="Upper
+cupboard
+(112)"];
+    S113  [label="Upper
+shelf
+(113)"];
+    S114  [label="Lower
+shelf
+(114)"];
+    S115  [label="Port
+transom
+locker
+(115)"];
+    S116  [label="Stb
+transom
+locker
+(116)"];
+    S117  [label="Aft
+cabin
+separation
+locker
+(117)"];
+    S119  [label="Black
+water
+tank
+locker
+(119)"];
+    S120  [label="Lower
+shelf
+(120)"];
+    S121  [label="Upper
+shelf
+(121)"];
+    S130  [label="Wardrobe
+(130)"];
+    S131  [label="Top
+shelf
+(131)"];
+    S132  [label="Lower
+Shelf
+(132)"];
+    S133  [label="Under
+seat
+locker
+(133)"];
+    S134  [label="Under
+bunk
+locker
+fwd
+(134)"];
+    S135  [label="Under
+bunk
+locker
+aft
+(135)"];
+    S136  [label="Floor
+locker
+(136)"];
+    S137  [label="Wardrobe
+(137)"];
+    S138  [label="Top
+shelf
+(138)"];
+    S139  [label="Lower
+Shelf
+(139)"];
+    S140  [label="Under
+seat
+locker
+(140)"];
+    S141  [label="Under
+bunk
+locker
+fwd
+(141)"];
+    S142  [label="Under
+bunk
+locker
+aft
+(142)"];
+    S143  [label="Floor
+locker
+(143)"];
+
+   S8 -> S16 [dir="both"];
+   S9 -> S15 [dir="both"];
+   S8 -> S115;
+   S9 -> S116;
+   S8 -> S117;
+   S9 -> S117;
+   S8 -> S130;
+   S8 -> S131;
+   S8 -> S132;
+   S8 -> S133;
+   S8 -> S134;
+   S8 -> S135;
+   S8 -> S136;
+   S9 -> S137;
+   S9 -> S138;
+   S9 -> S139;
+   S9 -> S140;
+   S9 -> S141;
+   S9 -> S142;
+   S9 -> S143;
+   S15 -> S109;
+   S15 -> S104;
+   S15 -> S113;
+   S15 -> S114;
+   S15 -> S110;
+   S16 -> S111;
+   S16 -> S119;
+   S16 -> S120;
+   S16 -> S121;
+   S16 -> S112;
+   subgraph "cluster_Aft accommodation"  {label="Aft accommodation"; S8; S9; S15; S16; S104; S109; S110; S111; S112; S113; S114; S115; S116; S117; S119; S120; S121; S130; S131; S132; S133; S134; S135; S136; S137; S138; S139; S140; S141; S142; S143; }
+}

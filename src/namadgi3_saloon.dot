@@ -1,0 +1,124 @@
+digraph namadgi3 {
+  size="11.5,8";
+  ratio=fill;
+    S6  [label="saloon
+(6)"];
+    S54  [label="keel
+floor
+locker
+1
+(54)"];
+    S55  [label="keel
+floor
+locker
+2
+(55)"];
+    S56  [label="keel
+floor
+locker
+3
+(56)"];
+    S57  [label="outboard
+floor
+locker
+1
+(57)"];
+    S58  [label="outboard
+floor
+locker
+2
+(58)"];
+    S59  [label="outboard
+floor
+locker
+3
+(59)"];
+    S60  [label="table
+locker
+aft
+(60)"];
+    S61  [label="table
+locker
+fwd
+(61)"];
+    S62  [label="seat
+locker
+fwd
+inboard
+(62)"];
+    S63  [label="seat
+locker
+fwd
+outboard
+(63)"];
+    S64  [label="seat
+locker
+aft
+(64)"];
+    S65  [label="seat
+locker
+middle
+(65)"];
+    S66  [label="backrest
+locker
+1
+(66)"];
+    S67  [label="backrest
+locker
+2
+(67)"];
+    S68  [label="backrest
+locker
+3
+(68)"];
+    S69  [label="backrest
+locker
+4
+(69)"];
+    S70  [label="shelf
+fwd
+(70)"];
+    S71  [label="shelf
+aft
+(71)"];
+    S72  [label="shelf
+upper
+(72)"];
+    S73  [label="cupboard
+1
+(73)"];
+    S74  [label="cupboard
+2
+(74)"];
+    S75  [label="cupboard
+3
+(75)"];
+    S76  [label="cupboard
+4
+(76)"];
+
+   S6 -> S54;
+   S6 -> S55;
+   S6 -> S56;
+   S6 -> S57;
+   S6 -> S58;
+   S6 -> S59;
+   S6 -> S60;
+   S6 -> S61;
+   S6 -> S62;
+   S6 -> S63;
+   S6 -> S64;
+   S6 -> S65;
+   S6 -> S66;
+   S6 -> S67;
+   S6 -> S68;
+   S6 -> S69;
+   S6 -> S70;
+   S6 -> S71;
+   S6 -> S72;
+   S6 -> S73;
+   S6 -> S74;
+   S6 -> S75;
+   S6 -> S76;
+   subgraph "cluster_Saloon"  {label="Saloon"; S6; S54; S55; S56; S57; S58; S59; S60; S61; S62; S63; S64; S65; S66; S67; S68; S69; S70; S71; S72; S73; S74; S75; S76; }
+}
