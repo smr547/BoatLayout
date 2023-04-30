@@ -1,3 +1,4 @@
+import csv
 
 class AccessType:
     types = {}
@@ -22,11 +23,33 @@ AccessType(10, "Seat cushion")
 class Region:
     regions = {}
 
+    @classmethod
+    def newFromCSV(cls, row):
+        try:
+            id = int(row[0])
+            name = row[1]
+            region = Region(id, name)
+            return region
+        except Exception as e:
+            print("An exception occured", e)
+            return None
+
+    @classmethod
+    def loadCSV(cls, fileName):
+        with open(fileName, newline='') as csvfile:
+            reader = csv.reader(csvfile, delimiter='\t', quotechar='|')
+            for row in reader:
+                region = Region.newFromCSV(row)
+                if region is not None:
+                    print(region)
+
     def __init__(self, id, name):
         self.id = id
         self.name = name
-        regions[id] = self
+        Region.regions[id] = self
 
+    def __str__(self):
+        return f'Region {self.id} -- {self.name}'
 class Space:
     def __init__(self, id, name):
         self.id = id
