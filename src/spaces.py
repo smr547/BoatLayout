@@ -43,18 +43,70 @@ class Region:
                 if region is not None:
                     print(region)
 
+    @classmethod
+    def findByName(cls, name):
+        for region in Region.regions.values():
+            if region.name == name:
+                return region
+        return None
+
     def __init__(self, id, name):
         self.id = id
         self.name = name
+        if Region.findByName(name) is not None:
+            raise ValueError(f'Region {name} is duplicated')
         Region.regions[id] = self
 
     def __str__(self):
         return f'Region {self.id} -- {self.name}'
+
 class Space:
-    def __init__(self, id, name):
+    spaces = {}
+
+    @classmethod
+    def newFromCSV(cls, row):
+        try:
+            id = int(row[0])
+            name = row[2]
+            if len(name) == 0:
+                return None
+            regionId = int(row[3])
+            space = Space(id, name, regionId)
+            return space
+        except Exception as e:
+            print("An exception occured", e)
+            return None
+
+    @classmethod
+    def loadCSV(cls, fileName):
+        with open(fileName, newline='') as csvfile:
+            reader = csv.reader(csvfile, delimiter='\t', quotechar='|')
+            for row in reader:
+                space = Space.newFromCSV(row)
+                if space is not None:
+                    print(space)
+
+    @classmethod
+    def findByNameAndRegionId(cls, name, regionId):
+        for space in Space.spaces.values():
+            if space.name == name and space.region.id == regionId:
+                return space
+        return None
+
+    def __init__(self, id, name, regionId):
         self.id = id
         self.name = name
-        accesses = {}
+        if regionId not in Region.regions:
+            raise ValueError(f'Unknown Region id {regionId} for Space {id}: {name}')
+        self.region = Region.regions[regionId]
+        if Space.findByNameAndRegionId(name, regionId) is not None:
+            raise ValueError(f'Space {name} is duplicated in {self.region}')
+        Space.spaces[id] = self
+        self.accesses = {}
+
+    def __str__(self):
+        return f'Space {self.id} -- {self.name}, {self.region}'
+
 
 class Access:
     def __init__(self, id, from_space, to_space, passable=False):

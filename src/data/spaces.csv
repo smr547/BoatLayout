@@ -1,0 +1,217 @@
+ID	Type	Name	Region	Region name
+0		Shore	0	Shore
+1		Swim deck	12	Transom
+2		Life Raft Locker	12	Transom
+3		Transom Companionway	12	Transom
+4		Cockpit	2	Cockpit
+5		Port Lazarette	16	Port Lazarette
+6		Stb Lazarette	17	Stb Lazarette
+7		Port Helm	2	Cockpit
+8		Stb Helm	2	Cockpit
+9		Gas Locker	2	Cockpit
+10		Cockpit port seat locker	2	Cockpit
+11		Cockpit stb seat locker	2	Cockpit
+12		Cockpit centre console	2	Cockpit
+13		Cockpit console locker	2	Cockpit
+14		port top deck aft	1	Top deck
+15		stb top deck aft	1	Top deck
+16		port coachhouse	1	Top deck
+17		stb coachhouse	1	Top deck
+18		top deck amidships	1	Top deck
+19		foredeck	1	Top deck
+20		pullpit	1	Top deck
+21		sail locker	11	Sail Locker
+22		upper companionway	2	Cockpit
+23		lower companionway	5	Saloon
+24		lower landing	5	Saloon
+25		Galley	4	Galley
+26		Aft heads	15	Aft heads
+27		Port cabin	7	Port cabin
+28		Starboard cabin	14	Starboard cabin
+29		Nav station	9	Nav Station
+30		Setee	5	Saloon
+31		Master cabin	6	Master suite
+32		Fwd heads	6	Master suite
+33		Rudder post	2	Cockpit
+34		Manual bilge pump	2	Cockpit
+35		Seawater wash fitting	2	Cockpit
+36		Dodger port pocket	2	Cockpit
+37		Dodger stb pocket	2	Cockpit
+38		Engine compartment	8	Engine space
+39		Companionway shelf	4	Galley
+40		Saloon Table	5	Saloon
+41		Wardrobe	14	Starboard cabin
+42		Wardrobe top self	14	Starboard cabin
+43		Outboard shelf	14	Starboard cabin
+44		Outboard shelf locker fwd	14	Starboard cabin
+45		Outboard shelf locker aft	14	Starboard cabin
+46		Bunkhead shelf	14	Starboard cabin
+47		Inboard storage bay	14	Starboard cabin
+48		Under bunk locker aft	14	Starboard cabin
+49		Under bunk locker fwd	14	Starboard cabin
+50		Shoe locker	14	Starboard cabin
+51		Floor locker fwd	14	Starboard cabin
+52		Floor locker aft	14	Starboard cabin
+53		Inboard shelf	14	Starboard cabin
+54		Wardrobe	7	Port cabin
+55		Wardrobe top self	7	Port cabin
+56		Outboard shelf	7	Port cabin
+57		Outboard shelf locker fwd	7	Port cabin
+58		Outboard shelf locker aft	7	Port cabin
+59		Bunkhead shelf	7	Port cabin
+60		Inboard storage bay	7	Port cabin
+61		Under bunk locker aft	7	Port cabin
+62		Under bunk locker fwd	7	Port cabin
+63		Shoe locker	7	Port cabin
+64		Floor locker	7	Port cabin
+65		Inboard shelf	7	Port cabin
+66		Floor locker aft	5	Saloon
+67		Floor locker middle	5	Saloon
+68		Floor locker fwd	5	Saloon
+69		Master switch cabinet	9	Nav Station
+70		Under seat locker	9	Nav Station
+71		Under table Drawer	9	Nav Station
+72		Under lower cabinet	9	Nav Station
+73		Top shelf	9	Nav Station
+74		Lower shelf	9	Nav Station
+75		Large under desktop cabinet	9	Nav Station
+76		Inboard under desktop cabinet	9	Nav Station
+77		Outboard under desktop cabinet	9	Nav Station
+78		12 switch cabinet	9	Nav Station
+79		Communications cabinet	9	Nav Station
+80		Raymarine display cabinet	9	Nav Station
+81		Top shelf	13	Settee
+82		Under seat locker fwd	13	Settee
+83		Under seat locker aft	13	Settee
+84		Settee outboard shelf	13	Settee
+85		Settee fwd shelf	13	Settee
+86		Cabinet fwd	13	Settee
+87		Cabinet aft	13	Settee
+88		Bookshelf	13	Settee
+89		Backrest locker fwd	13	Settee
+90		Backrest locker aft	13	Settee
+91		Shelf fwd	13	Settee
+92		Shelf outboard	13	Settee
+93		Top shelf	5	Saloon
+94		Book shelf	5	Saloon
+95		Cabinet fwd	5	Saloon
+96		Cabinet 2nd from front	5	Saloon
+97		Cabinet 3rd from front	5	Saloon
+98		Cabinet 4th from front	5	Saloon
+99		Outboard Shelf locker	5	Saloon
+100		Outboard backrest locker fwd	5	Saloon
+101		Outboard backrest locker mid	5	Saloon
+102		Outboard backrest locker aft	5	Saloon
+103		Fwd shelf locker outboard	5	Saloon
+104		Fwd shelf locker inboard	5	Saloon
+105		Central seat locker	5	Saloon
+106		Outboard seat locker fwd	5	Saloon
+107		Outboard seat locker aft	5	Saloon
+108		Inboard Seat locker fwd	5	Saloon
+109		Inboard Seat locker aft	5	Saloon
+110		Sink top	4	Galley
+111		Under sink cupboard aft	4	Galley
+112		Under sink cupboard fwd	4	Galley
+113		Main bench	4	Galley
+114		Small bench	4	Galley
+115		Freezer	4	Galley
+116		Fridge	4	Galley
+117		Cuttlery draw	4	Galley
+118		Bulk storage	4	Galley
+119		Fruit and veg hamper draw	4	Galley
+120		Lower shelf	4	Galley
+121		Small bench aft cupboard	4	Galley
+122		Small bench upper forward cupboard	4	Galley
+123		Small bench lower forward cupboard	4	Galley
+124		Stove top	4	Galley
+125		Oven	4	Galley
+126		Under stove cupboard	4	Galley
+127		Microwave	4	Galley
+128		Small bench over cupboard	4	Galley
+129		Over stove shelf	4	Galley
+130		Over bench cupboard	4	Galley
+131		Top shelf	4	Galley
+132		Settee shelf locker inboard	13	Settee
+133		Settee shelf locker outboard	13	Settee
+134		Floor locker fwd	4	Galley
+135		Floor locker aft	4	Galley
+136		Stb shelf	11	Sail Locker
+137		Port shelf	11	Sail Locker
+138		Chain locker	11	Sail Locker
+139		Port Lazarette shelf	16	Port Lazarette
+140		Stb Lazarette shelf	17	Stb Lazarette
+141		Under bunk draw	6	Master suite
+142		port top shelf	6	Master suite
+143		port robe top shelf	6	Master suite
+144		port bookshelf	6	Master suite
+145		port upper cabinet fwd	6	Master suite
+146		port upper cabinet 2nd from front	6	Master suite
+147		upper cabinet fwd	15	Aft heads
+148		upper cabinet aft	15	Aft heads
+149		port bedside shelf	6	Master suite
+150		port shelf locker	6	Master suite
+151		stb top shelf	6	Master suite
+152		stb robe top shelf	6	Master suite
+153		stb robe aft	6	Master suite
+154		stb robe forward	6	Master suite
+155		stb robe upper shelf	6	Master suite
+156		stb robe mid shelf	6	Master suite
+157		stb robe lower shelf	6	Master suite
+158		desk top	6	Master suite
+159		fwd desk top cabinet	6	Master suite
+160		aft desk top cabinet	6	Master suite
+161		fwd under desk shelf	6	Master suite
+162		aft under desk shelf	6	Master suite
+163		under desk shoe locker	6	Master suite
+164		stb shelf locker	6	Master suite
+165		under bunk locker fwd	6	Master suite
+166		secure medical locker	6	Master suite
+167		n/a		Shore
+167		stb bookshelf	6	Master suite
+168		stb upper cabinet fwd	6	Master suite
+169		stb upper cabinet 2nd from front	6	Master suite
+170		stb upper cabinet 3rd from front	6	Master suite
+171		stb upper cabinet aft	6	Master suite
+172		stb bedside shelf	6	Master suite
+173		under bunk locker aft	6	Master suite
+174		floor locker port	6	Master suite
+175		floor locker midships fwd	6	Master suite
+176		floor locker midships aft	6	Master suite
+177		floor locker stb fwd	6	Master suite
+178		floor locker stb aft	6	Master suite
+179		desk seat locker	6	Master suite
+180		stb floor locker aft	18	Landing
+181		stb battery locker	18	Landing
+182		port battery locker	18	Landing
+183		midships keel locker	5	Saloon
+184		floor locker fwd	5	Saloon
+185		port tank locker	5	Saloon
+186		stb water tank locker	13	Settee
+187		floor locker outboard	13	Settee
+188		floor locker outboard	5	Saloon
+189		bilge	5	Saloon
+190		fwd keel locker	5	Saloon
+191		water maker inlet locker	13	Settee
+192		under sink cabinet	15	Aft heads
+193		under sink cabinet	6	Master suite
+194		heads upper cabinet	6	Master suite
+195				Shore
+196				Shore
+197				Shore
+198				Shore
+199				Shore
+200				Shore
+201			0	Shore
+202		top shelf	15	Aft heads
+203		lower shelf	15	Aft heads
+204		sink bench	15	Aft heads
+205		black water tank cabinet	15	Aft heads
+206		shower room	15	Aft heads
+207		shower top shelf	15	Aft heads
+208		shower lower shelf	15	Aft heads
+209			0	Shore
+210		sink top	6	Master suite
+211		shower shelf	6	Master suite
+212		black water tank cabinet	6	Master suite
+213		heads top shelf	6	Master suite
+214		heads lower shelf	6	Master suite
