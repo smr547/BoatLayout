@@ -1,4 +1,6 @@
-BoatGraph records the layout of a boat as a graph of Spaces and Access ports.
+BoatLayout records the layout of a boat as a graph of Spaces and Access ports. It provides a succinct relational model for the various spaces combined with textual description which gives meaning to space names and access paths within any vessel.
+
+Future work will include an API to allow integration with boat inventory and maintenance systems. The addition of 3D properties to the Spaces will allow integration with 3D visualisation tools.
 
 ## Data model
 
