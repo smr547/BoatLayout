@@ -114,6 +114,22 @@ class Space:
         Space.spaces[id] = self
         self.accesses = {}
 
+    def addAccess(self, access):
+        id = access.id
+        if id in self.accesses:
+            raise ValueError(f'{self.str()} alsready has Access {id} {access.name}')
+        self.accesses[id] = access
+
+    def describe(self):
+        desc = f'You are in {self.region.name} '
+        desc += f'at {self.name} ({self.id})\r\n'
+        desc += f'you can walk to '
+        for access in self.accesses.values():
+            if access.passable:
+                space = access.otherSpace(self)
+                desc += f'{space.name} ({space.id}), '
+        return desc
+
     def __str__(self):
         return f'Space {self.id} -- {self.name}, {self.region}'
 
@@ -162,7 +178,18 @@ class Access:
         self.toSpace = toSpace
         self.passable = passable
 
+        fromSpace.addAccess(self)
+        toSpace.addAccess(self)
+
         Access.accesses[id] = self
+
+    def otherSpace(self, space):
+        # given a space, describe the other accessible space
+
+        if self.fromSpace == space:
+            return self.toSpace
+        else:
+            return self.fromSpace
 
 
     def __str__(self):
