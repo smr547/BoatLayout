@@ -121,13 +121,27 @@ class Space:
         self.accesses[id] = access
 
     def describe(self):
-        desc = f'You are in {self.region.name} '
-        desc += f'at {self.name} ({self.id})\r\n'
+        if self.region.name == self.name:
+            desc = f'You are in {self.name} ({self.id})\r\n'
+        else:
+            desc = f'You are in {self.region.name} '
+            desc += f'at {self.name} ({self.id})\r\n'
         desc += f'you can walk to '
         for access in self.accesses.values():
             if access.passable:
                 space = access.otherSpace(self)
                 desc += f'{space.name} ({space.id}), '
+        
+        reachableSpaces = []
+        for access in self.accesses.values():
+            if not access.passable:
+                space = access.otherSpace(self)
+                reachableSpaces.append(space)
+        if len(reachableSpaces) > 0:
+            desc +=f'\r\nyou can access '
+            for spaces in reachableSpaces:
+                desc += f'{space.name} ({space.id}), '
+
         return desc
 
     def __str__(self):
