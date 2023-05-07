@@ -1,0 +1,198 @@
+Id		Type	from 	to	passable
+0		Open	1	0	1
+1		Hatch	1	2	0
+2		Seat hatch	1	3	1
+3		Seat hatch	3	4	1
+4		Open	4	7	1
+5		Open	4	8	1
+6		Seat hatch	7	5	1
+7		Seat hatch	8	6	1
+8		Floor cover	4	9	0
+9		Floor cover	4	33	0
+10		Hatch	7	34	0
+11		Open	4	12	0
+12		Hatch	4	13	0
+13		Hatch	7	35	0
+14		Open	4	16	1
+15		Open	4	17	1
+16		Open	7	14	1
+17		Open	8	15	1
+18		Open	4	22	1
+19		Open	22	23	0
+20		Open	23	24	1
+21		Doorway	24	26	1
+22		Doorway	24	28	1
+23		Hatch	24	38	1
+24		Open	24	25	1
+25		Open	24	29	1
+26		Open	24	39	0
+27		Open	24	40	1
+28		Open	29	30	1
+29		Open	40	30	1
+30		Doorway	30	31	1
+31		Doorway	31	32	1
+32		Doorway	25	27	1
+33		Open	14	18	1
+34		Open	15	18	1
+35		Open	18	19	1
+36		Open	19	20	1
+37		Hatch	20	21	1
+38		Doorway	28	26	1
+39		Buttoned door	28	41	0
+40		Open	28	42	0
+41		Open	28	43	1
+42		Hatch	28	44	0
+43		Hatch	28	45	0
+44		Open	28	46	0
+45		Open	28	47	0
+46		Hatch	28	48	0
+47		Hatch	28	49	0
+48		Open	28	50	0
+49		Floor cover	28	51	0
+50		Floor cover	28	52	0
+51		Open	28	53	0
+52		Buttoned door	27	54	0
+53		Open	27	55	0
+54		Open	27	56	0
+55		Hatch	27	57	0
+56		Hatch	27	58	0
+57		Open	27	59	0
+58		Open	27	60	0
+59		Hatch	27	61	0
+60		Hatch	27	62	0
+61		Open	27	63	0
+62		Floor cover	27	64	0
+63		Open	27	65	0
+64		Hatch	28	38	0
+65		Hatch	27	38	0
+66		Buttoned door	24	69	0
+67		Seat Hatch	29	70	0
+68		Drawer	29	71	0
+69		Buttoned door	29	72	0
+70		Open	29	73	0
+71		Open	29	74	0
+72		Hatch	29	75	0
+73		Hatch	29	76	0
+74		Hatch	29	77	0
+75		Buttoned door	29	78	0
+76		Buttoned door	29	79	0
+77		Door	29	80	0
+78		Open	30	81	0
+79		Seat cushion	30	82	0
+80		Seat cushion	30	83	0
+81		Open	30	84	0
+82		Open	30	85	0
+83		Buttoned door	30	86	0
+84		Buttoned door	30	87	0
+85		Backrest cushion	30	89	0
+86		Backrest cushion	30	90	0
+87		Open	40	91	0
+88		Open	40	92	0
+89		Open	40	93	0
+90		Open	40	94	0
+91		Buttoned door	40	95	0
+92		Buttoned door	40	96	0
+93		Buttoned door	40	97	0
+94		Buttoned door	40	98	0
+95		Door	40	99	0
+96		Backrest cushion	40	100	0
+97		Backrest cushion	40	101	0
+98		Backrest cushion	40	102	0
+99		Hatch	40	103	0
+100		Hatch	40	104	0
+101		Seat cushion	40	105	0
+102		Seat cushion	40	106	0
+103		Seat cushion	40	107	0
+104		Seat cushion	40	108	0
+105		Seat cushion	40	109	0
+106		Open	25	110	0
+107		Buttoned door	25	111	0
+108		Buttoned door	25	112	0
+109		Open	25	113	0
+110		Open	25	114	0
+111		Hatch	25	115	0
+112		Buttoned door	25	116	0
+113		Buttoned door	25	117	0
+114		Buttoned door	24	118	0
+115		Drawer	118	119	0
+116		Open	118	120	0
+117		Buttoned door	25	121	0
+118		Buttoned door	25	122	0
+119		Buttoned door	25	123	0
+120		Open	25	124	0
+121		Door	25	125	0
+122		Hatch	25	126	0
+123		Door	25	127	0
+124		Buttoned door	25	128	0
+125		Open	25	129	0
+126		Buttoned door	25	130	0
+127		Open	25	131	0
+128		Hatch	30	132	0
+129		Hatch	30	133	0
+130		Hatch	19	21	1
+131		Open	21	136	0
+132		Open	21	137	0
+133		Hatch	21	138	0
+134		Open	5	139	0
+135		Open	6	140	0
+136		Drawer	31	141	0
+137		Open	31	142	0
+138		Open	31	143	0
+139		Open	31	144	0
+140		Buttoned door	31	145	0
+141		Buttoned door	31	146	0
+142		Hatch	172	164	0
+143		Under bunk hatch	31	165	0
+144		Hatch	157	166	0
+145		Open	31	167	0
+146		Buttoned door	31	168	0
+147		Buttoned door	31	169	0
+148		Buttoned door	31	170	0
+149		Buttoned door	31	171	0
+150		Open	31	172	0
+151		Open	31	149	0
+152		Hatch	149	150	0
+153		Open	31	151	0
+154		Open	31	152	0
+155		Buttoned door	31	153	0
+156		Buttoned door	31	154	0
+157		Open	154	155	0
+158		Open	154	156	0
+159		Open	154	157	0
+160		Open	31	158	0
+161		Open	31	159	0
+162		Open	31	160	0
+163		Open	31	161	0
+164		Open	31	162	0
+165		Open	31	163	0
+166		Open	31	164	0
+167		Under bunk hatch	31	165	0
+168		Hatch	153	166	0
+169		Open	31	167	0
+170		Buttoned door	31	168	0
+171		Buttoned door	31	169	0
+172		Buttoned door	31	170	0
+173		Buttoned door	31	171	0
+174		Open	31	172	0
+175		Under bunk hatch	31	173	0
+176		Floor cover	31	174	0
+177		Floor cover	31	175	0
+178		Floor cover	31	176	0
+179		Floor cover	31	177	0
+180		Floor cover	31	178	0
+181		Seat hatch	31	179	0
+182		Floor cover	24	180	0
+183		Floor cover	24	181	0
+184		Floor cover	24	182	0
+185		Floor cover	105	183	0
+186		Floor cover	30	184	0
+187		Floor cover	40	185	0
+188		Floor cover	30	186	0
+189		Floor cover	29	187	0
+190		Floor cover	29	188	0
+191		Floor cover	40	189	0
+192		Floor cover	40	190	0
+193		Floor cover	30	191	0
+194		Hatch	26	192	0
+195		Hatch	32	193	0
+196		Buttoned door	32	194	0
