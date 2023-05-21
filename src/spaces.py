@@ -29,6 +29,8 @@ AccessType(9, "Backrest cushion")
 AccessType(10, "Seat cushion")
 AccessType(11, "Floor cover")
 AccessType(12, "Seat Hatch")
+AccessType(13, "fender step")
+AccessType(14, "passerale")
 
 class Region:
     regions = {}
@@ -41,7 +43,7 @@ class Region:
             region = Region(id, name)
             return region
         except Exception as e:
-            print("An exception occured", e)
+            # print("An exception occured", e)
             return None
 
     @classmethod
@@ -50,8 +52,8 @@ class Region:
             reader = csv.reader(csvfile, delimiter='\t', quotechar='|')
             for row in reader:
                 region = Region.newFromCSV(row)
-                if region is not None:
-                    print(region)
+                # if region is not None:
+                #     print(region)
 
     @classmethod
     def findByName(cls, name):
@@ -84,7 +86,7 @@ class Space:
             space = Space(id, name, regionId)
             return space
         except Exception as e:
-            print("An exception occured", e)
+            # print("An exception occured", e)
             return None
 
     @classmethod
@@ -93,8 +95,8 @@ class Space:
             reader = csv.reader(csvfile, delimiter='\t', quotechar='|')
             for row in reader:
                 space = Space.newFromCSV(row)
-                if space is not None:
-                    print(space)
+                # if space is not None:
+                #     print(space)
 
     @classmethod
     def findByNameAndRegionId(cls, name, regionId):
@@ -119,6 +121,20 @@ class Space:
         if id in self.accesses:
             raise ValueError(f'{self.str()} alsready has Access {id} {access.name}')
         self.accesses[id] = access
+
+    def passableAccesses(self):
+        result = []
+        for access in self.accesses.values():
+            if access.passable:
+                result.append(access)
+        return result
+
+    def nonPassableAccesses(self):
+        result = []
+        for access in self.accesses.values():
+            if not access.passable:
+                result.append(access)
+        return result
 
     def describe(self):
         if self.region.name == self.name:
@@ -165,7 +181,7 @@ class Access:
             access = Access(id, accessType, fromSpaceId, toSpaceId, passable)
             return access
         except Exception as e:
-            print("An exception occured", e)
+            # print("An exception occured", e)
             return None
 
     @classmethod
@@ -174,8 +190,8 @@ class Access:
             reader = csv.reader(csvfile, delimiter='\t', quotechar='|')
             for row in reader:
                 access = Access.newFromCSV(row)
-                if access is not None:
-                    print(access)
+                # if access is not None:
+                #     print(access)
 
 #    @classmethod
 #    def findByName(cls, name):

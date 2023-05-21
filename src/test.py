@@ -7,7 +7,8 @@ try:
     Space.loadCSV("./data/spaces.csv")
     Access.loadCSV("./data/accesses.csv")
 except Exception as e:
-    print(e)
+    # print(e)
+    pass
 
 
 while (True):
