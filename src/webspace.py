@@ -21,6 +21,12 @@ except Exception as e:
     print(e)
     pass
 
+def commonSpaces(listA, listB):
+    common = []
+    for space in listA:
+        if space in listB:
+            common.append(space)
+    return common
 
 args = sys.argv[1].split("\\&")
 spaceId = args[0] 

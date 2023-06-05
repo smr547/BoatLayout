@@ -30,7 +30,9 @@ AccessType(10, "Seat cushion")
 AccessType(11, "Floor cover")
 AccessType(12, "Seat Hatch")
 AccessType(13, "fender step")
-AccessType(14, "passerale")
+AccessType(14, "passerelle")
+AccessType(15, "Shower screen")
+AccessType(16, "Lifeline gate")
 
 class Region:
     regions = {}
