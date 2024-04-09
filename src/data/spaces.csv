@@ -13,8 +13,8 @@ ID	Type	Name	Region	Region name
 11		Cockpit stb seat locker	2	Cockpit
 12		Cockpit centre console	2	Cockpit
 13		Cockpit console locker	2	Cockpit
-14		port top deck aft	1	Top deck
-15		stb top deck aft	1	Top deck
+14		port quarter deck	1	Top deck
+15		stb quarter deck	1	Top deck
 16		port coachhouse	1	Top deck
 17		stb coachhouse	1	Top deck
 18		top deck amidships	1	Top deck
@@ -216,3 +216,7 @@ ID	Type	Name	Region	Region name
 213		heads top shelf	6	Master suite
 214		heads lower shelf	6	Master suite
 215		shower room	6	Master suite
+216		port pushpit rail	1	Top deck
+217		stb pushpit rail	1	Top deck
+218		stb qtr deck rail	1	Top deck
+219		port qtr deck rail	1	Top deck

@@ -13,8 +13,8 @@ Id		Type	from 	to	passable
 11		Open	4	12	0
 12		Hatch	4	13	0
 13		Hatch	7	35	0
-14		Open	4	16	1
-15		Open	4	17	1
+14		Open	4	16	0
+15		Open	4	17	0
 16		Open	7	14	1
 17		Open	8	15	1
 18		Open	4	22	1
@@ -223,4 +223,10 @@ Id		Type	from 	to	passable
 221		Open	212	211	0
 222		Lifeline gate	0	14	1
 223		Lifeline gate	0	15	1
+224		Open	4	14	1
+225		Open	4	15	1
+226		Open	15	218	0
+227		Open	14	219	0
+228		Open	15	217	0
+229		Open	14	216	0
 
