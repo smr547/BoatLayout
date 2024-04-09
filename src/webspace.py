@@ -4,12 +4,17 @@ from spaces import Region, Space, Access, AccessType
 import sys
 import traceback
 
-rootURL = "trilogy"
+rootURL = "webspace.py"
 spacesSoFar = []
 
 
 def nameLink(space):
-    pathId = [str(s.id) for s in spacesSoFar]
+    # pathId = [str(s.id) for s in spacesSoFar]
+    pathId = []
+    for s in spacesSoFar:
+        pathId.append(str(s.id))
+        if s == space:
+            break
     pathIds = ",".join(pathId)
     return f'<a href="{rootURL}?{space.id}&{pathIds}">{space.name}</a>'
 
@@ -47,6 +52,11 @@ for id in pathIds.split(','):
 openAccess = AccessType.findByName("Open")
 
 try:
+    # HTTP headers
+
+    print("Content-type: text/html\n\n")
+
+    # check that the space is known
     id = int(spaceId)
     if id in Space.spaces:
         space = Space.spaces[id]
@@ -100,8 +110,10 @@ try:
         anchors = []
 
         for s in spacesSoFar:
-            anchors.append(f'<a href="trilogy?{s.id}&{",".join(path)}">{s.name}</a>')
+            anchors.append(f'<a href="{rootURL}?{s.id}&{",".join(path)}">{s.name}</a>')
             path.append(str(s.id))
+            if s == space:
+                break
         print(f'{" > ".join(anchors)}</p>')
     
     else:
