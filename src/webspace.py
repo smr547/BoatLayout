@@ -67,7 +67,7 @@ try:
         walkableAccesses = space.passableAccesses()
         if len(walkableAccesses) > 0:
             print(f'<h1>You are in {space.name} ({space.id})</h1>')
-            print("go to: <br/><ul>")
+            print("You can move to: <br/><ul>")
             for wa in walkableAccesses:
                 os = wa.otherSpace(space)
                 print("<li>", nameLink(os)," (", os.id, ")")
