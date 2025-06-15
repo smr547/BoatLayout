@@ -32,8 +32,8 @@ Id		Type	from 	to	passable
 30		Doorway	30	31	1
 31		Doorway	31	32	1
 32		Doorway	25	27	1
-33		Open	14	18	1
-34		Open	15	18	1
+33		Open	197	18	1
+34		Open	198	18	1
 35		Open	18	19	1
 36		Open	19	20	1
 37		Hatch	20	21	1
@@ -235,4 +235,9 @@ Id		Type	from 	to	passable
 233		Open	8	15	0
 234		Open	6	195	0
 235		Open	29	196	0
+336		Open	197	19	1
+337		Open	198	19	1
+338		Open	197	14	1
+339		Open	198	15	1
+340		Open	24	30	1
 

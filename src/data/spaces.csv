@@ -39,7 +39,7 @@ ID	Type	Name	Region	Region name
 37		Dodger stb pocket	2	Cockpit
 38		Engine compartment	8	Engine space
 39		Companionway shelf	4	Galley
-40		Saloon Table	5	Saloon
+40		Saloon	5	Saloon
 41		Wardrobe	14	Starboard cabin
 42		Wardrobe top self	14	Starboard cabin
 43		Outboard shelf	14	Starboard cabin
@@ -197,8 +197,8 @@ ID	Type	Name	Region	Region name
 194		heads upper cabinet	6	Master suite
 195		forward bulkhead	17	Stb Lazarette
 196		under table bulkhead	9	Nav Station
-197				Shore
-198				Shore
+197		Port mid deck	1	Top deck
+198		Starboard mid deck	1	Top deck
 199				Shore
 200				Shore
 201			0	Shore
