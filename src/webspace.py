@@ -6,6 +6,7 @@ import traceback
 
 rootURL = "webspace.py"
 spacesSoFar = []
+nopath = False
 
 
 def nameLink(space):
@@ -16,7 +17,10 @@ def nameLink(space):
         if s == space:
             break
     pathIds = ",".join(pathId)
-    return f'<a href="{rootURL}?{space.id}&{pathIds}">{space.name}</a>'
+    if nopath:
+        return f'<a href="{rootURL}?{space.id}&nopath">{space.name}</a>'
+    else:
+        return f'<a href="{rootURL}?{space.id}&{pathIds}">{space.name}</a>'
 
 try:
     Region.loadCSV("./data/regions.csv")
@@ -39,6 +43,12 @@ if len(args) > 1:
     pathIds = args[1]
 else: 
     pathIds = ""
+# print("pathIds=",pathIds)
+if pathIds == "nopath":
+    pathIds = ""
+    nopath = True
+else:
+    nopath = False
 
 for id in pathIds.split(','):
     try:
@@ -105,16 +115,17 @@ try:
 
         # list path so far
 
-        print(f'<p>Your path so far:</p><p>')
-        path = []
-        anchors = []
+        if not nopath:
+            print(f'<p>Your path so far:</p><p>')
+            path = []
+            anchors = []
 
-        for s in spacesSoFar:
-            anchors.append(f'<a href="{rootURL}?{s.id}&{",".join(path)}">{s.name}</a>')
-            path.append(str(s.id))
-            if s == space:
-                break
-        print(f'{" > ".join(anchors)}</p>')
+            for s in spacesSoFar:
+                anchors.append(f'<a href="{rootURL}?{s.id}&{",".join(path)}">{s.name}</a>')
+                path.append(str(s.id))
+                if s == space:
+                    break
+            print(f'{" > ".join(anchors)}</p>')
     
     else:
 
