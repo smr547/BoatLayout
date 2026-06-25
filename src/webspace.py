@@ -1,5 +1,7 @@
 #!/bin/env python3
 
+import os
+from urllib.parse import parse_qs
 from spaces import Region, Space, Access, AccessType
 import sys
 import traceback
@@ -18,9 +20,9 @@ def nameLink(space):
             break
     pathIds = ",".join(pathId)
     if nopath:
-        return f'<a href="{rootURL}?{space.id}&nopath">{space.name}</a>'
+        return f'<a href="{rootURL}?space={space.id}&path=nopath">{space.name}</a>'
     else:
-        return f'<a href="{rootURL}?{space.id}&{pathIds}">{space.name}</a>'
+        return f'<a href="{rootURL}?space={space.id}&path={pathIds}">{space.name}</a>'
 
 try:
     Region.loadCSV("./data/regions.csv")
@@ -37,18 +39,44 @@ def commonSpaces(listA, listB):
             common.append(space)
     return common
 
-args = sys.argv[1].split("\\&")
-spaceId = args[0] 
-if len(args) > 1:
-    pathIds = args[1]
-else: 
-    pathIds = ""
+# Parse the query string
+
+# args = sys.argv[1].split("\\&")
+# spaceId = args[0] 
+# if len(args) > 1:
+#     pathIds = args[1]
+# else: 
+#     pathIds = ""
 # print("pathIds=",pathIds)
+# if pathIds == "nopath":
+#     pathIds = ""
+#     nopath = True
+# else:
+#     nopath = False
+
+# new parsing
+
+qs = parse_qs(os.environ.get("QUERY_STRING", ""))
+
+spaceId = int(qs.get("space", ["0"])[0])
+#if spaceId is None:
+if "space" not in os.environ.get("QUERY_STRING", ""):
+    print("Status: 400 Bad Request")
+    print("Content-Type: text/plain")
+    print()
+    print("Missing required query parameter: space")
+    raise SystemExit
+
+
+
+
+pathIds = qs.get("path", [""])[0]
 if pathIds == "nopath":
     pathIds = ""
     nopath = True
 else:
     nopath = False
+
 
 for id in pathIds.split(','):
     try:
@@ -79,8 +107,8 @@ try:
             print(f'<h1>You are in {space.name} ({space.id})</h1>')
             print("You can move to: <br/><ul>")
             for wa in walkableAccesses:
-                os = wa.otherSpace(space)
-                print("<li>", nameLink(os)," (", os.id, ")")
+                oSpace = wa.otherSpace(space)
+                print("<li>", nameLink(oSpace)," (", oSpace.id, ")")
                 if wa.accessType != openAccess:
                     print(f' via {wa.accessType.name}')
                 print("</li>")
@@ -101,16 +129,16 @@ try:
         if len(openAccesses) > 0:
             print("You have open access to: <br/><ul>")
             for nwa in openAccesses:
-                os = nwa.otherSpace(space)
-                print(f'<li>{nameLink(os)} ({os.id})</li>')
+                oSpace = nwa.otherSpace(space)
+                print(f'<li>{nameLink(oSpace)} ({oSpace.id})</li>')
             print(f'</ul>')
         
         # covered accesses
         if len(coveredAccesses) > 0:
             print("You can access: <br/><ul>")
             for nwa in coveredAccesses:
-                os = nwa.otherSpace(space)
-                print(f'<li>{nameLink(os)} ({os.id}) via {nwa.accessType.name}</li>')
+                oSpace = nwa.otherSpace(space)
+                print(f'<li>{nameLink(oSpace)} ({oSpace.id}) via {nwa.accessType.name}</li>')
             print(f'</ul>')
 
         # list path so far
@@ -121,7 +149,7 @@ try:
             anchors = []
 
             for s in spacesSoFar:
-                anchors.append(f'<a href="{rootURL}?{s.id}&{",".join(path)}">{s.name}</a>')
+                anchors.append(f'<a href="{rootURL}?space={s.id}&path={",".join(path)}">{s.name}</a>')
                 path.append(str(s.id))
                 if s == space:
                     break
